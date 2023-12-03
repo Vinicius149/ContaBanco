@@ -1,2 +1,2 @@
 # ContaBanco
-Sintaxe-Desafio
+Desafio da DIO para criação de conta bancária.
