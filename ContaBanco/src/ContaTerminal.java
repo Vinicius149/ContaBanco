@@ -1,9 +1,10 @@
 import java.util.Scanner;
+import java.util.InputMismatchException;
 import java.util.Locale;
 
 public class ContaTerminal {
     public static void main(String[] args) throws Exception {
-
+    	try {
         System.out.println("Bem vindo ao Banco X!");
         System.out.println("Prosseguiremos para realizar a abertura da sua conta! ");
 
@@ -22,6 +23,8 @@ public class ContaTerminal {
             double saldo = scanner.nextDouble();
      
         System.out.println("Olá " +nomeCliente+ ", obrigado por criar uma conta em nosso banco, sua agência é " + agencia +", conta "+ numero +" e seu saldo " + saldo + " já está disponível para saque");     
-
+    	} catch	(InputMismatchException e) {
+    		System.out.println(" O campo conta deve possuir apenas números!");
+    	}
    }
 }
